@@ -1,0 +1,48 @@
+#text{
+  text-align: left;
+  padding: 10px;
+  width: 80vw;
+  height: 50vh;
+  border: 2px solid white;
+  
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: x-large;
+  font-weight: bold;
+}
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns button{
+  margin: 2vmax;
+  width: 6vmax;
+  height: 3vmax;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.btns button:hover{
+  background-color: aqua;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.stoplisten{
+  background-color: red;
+}
+
+@media  (max-width:650px) {
+  .btns{
+    flex-wrap: wrap;
+  }
+  .btns button{
+    width: 10vmax;
+    height: 8vmax;
+  } 
+}
